@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { View, Text ,Image} from "react-native";
+import { Text ,Image} from "react-native";
 import styles from "./style/homestyles";
 import { useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";

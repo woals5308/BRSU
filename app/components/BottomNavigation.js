@@ -13,7 +13,7 @@ export default function BottomNavigation() {
         <FontAwesome5 name="home" size={20} color="gray" />
         <Text style={styles.navText}>홈</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.navItemLeft}>
+      <TouchableOpacity style={styles.navItemLeft} onPress={()=>router.push('/page/usedetail')}>
         <FontAwesome5 name="shopping-bag" size={20} color="gray" />
         <Text style={styles.navText}>쇼핑</Text>
       </TouchableOpacity>

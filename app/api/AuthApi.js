@@ -2,7 +2,6 @@ import axios from "axios";
 import axiosInstance from "./axiosInstance";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Alert } from "react-native";
-import { useState } from "react";
 import { router } from "expo-router";
 
 
@@ -124,7 +123,7 @@ export const getNearbyCollectionPoints = async (latitude, longitude) =>{
 
 
 
-//qr 카메라로 QR바코드 찍고 데이터 
+//카메라를 켜서 qr 찍고 qr 데이터를 넘겨주고 수거함 문 열기
 export const QR = async(data) =>{
     try{
         const token = await AsyncStorage.getItem("usertoken");
@@ -134,7 +133,7 @@ export const QR = async(data) =>{
         }
         const response = await axiosInstance.get(`/map/openBox/${data}`)
         router.push({
-            pathname:"/page/QRload",
+            pathname:"/components/GoogleMap",
             params:{data},
         });
     }catch(error){

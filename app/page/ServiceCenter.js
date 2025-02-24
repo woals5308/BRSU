@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, TextInput, FlatList, ScrollView, StyleSheet, TouchableOpacity } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
-import styles from "../style/servicecenter";
+import styles from "../style/servicecenterstyles";
 
 const faqTags = ["포인트 환불", "화재 수거함", "QR코드 인식", "현금 결제", "기타", "BATTER 법인"];
 const announcements = [

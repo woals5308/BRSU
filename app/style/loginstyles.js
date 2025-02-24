@@ -1,132 +1,132 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: "black",
-    },
-    safeArea: {
-      flex: 1,
-    },
-    scrollContainer: {
-      flexGrow: 1,
-      alignItems: "center",
-      justifyContent: "center",
-      paddingHorizontal: 20,
-    },
-    title: {
-      fontSize: 24,
-      fontWeight: "bold",
-      color: "white",
-      marginBottom: 20,
-    },
-    loginBox: {
-      width: "100%",
-      backgroundColor: "#222",
-      padding: 20,
-      borderRadius: 10,
-    },
-    label: {
-      color: "#aaa",
-      fontSize: 14,
-      marginBottom: 5,
-    },
-    inputContainer: {
-      flexDirection: "row",
-      alignItems: "center",
-      backgroundColor: "#333",
-      borderRadius: 5,
-      paddingHorizontal: 10,
-      marginBottom: 15,
-    },
-    input: {
-      flex: 1,
-      color: "white",
-      paddingVertical: 12,
-    },
-    icon: {
-      fontSize: 16,
-      color: "#bbb",
-    },
-    row: {
-      flexDirection: "row",
-      alignItems: "center",
-      justifyContent: "space-between",
-      marginBottom: 15,
-    },
-    checkbox: {
-      width: 20,
-      height: 20,
-      borderRadius: 3,
-      borderWidth: 1,
-      borderColor: "white",
-      alignItems: "center",
-      justifyContent: "center",
-    },
-    checkmark: {
-      color: "green",
-      fontSize: 14,
-    },
-    checkboxText: {
-      color: "white",
-      fontSize: 14,
-      marginLeft: 10,
-    },
-    linkText: {
-      color: "#bbb",
-      fontSize: 14,
-      textDecorationLine: "underline",
-    },
-    loginButton: {
-      backgroundColor: "green",
-      padding: 15,
-      borderRadius: 5,
-      alignItems: "center",
-    },
-    loginButtonText: {
-      color: "white",
-      fontSize: 16,
-      fontWeight: "bold",
-    },
-    socialButton: {
-      width: "100%",
-      paddingVertical: 12,
-      borderRadius: 5,
-      alignItems: "center",
-      marginTop: 10,
-    },
-    kakaoButton: {
-      backgroundColor: "#FEE500",
-    },
-    kakaoText: {
-      color: "#3C1E1E",
-      fontWeight: "bold",
-      fontSize: 16,
-    },
-    appleButton: {
-      backgroundColor: "white",
-    },
-    appleText: {
-      color: "black",
-      fontWeight: "bold",
-      fontSize: 16,
-    },
-    naverButton: {
-      backgroundColor: "#03C75A",
-    },
-    naverText: {
-      color: "white",
-      fontWeight: "bold",
-      fontSize: 16,
-    },
-    registerText: {
-      color: "green",
-      fontSize: 14,
-      marginTop: 20,
-      textDecorationLine: "underline",
-    },
-  });
+  container: {
+    flex: 1,
+    backgroundColor: "#000",
+  },
+  scrollContainer: {
+    flexGrow: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingVertical: 30,
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "#fff",
+    marginBottom: 40,
+    bottom: 15,
+  },
+  loginBox: {
+    width: 340,
+    padding: 25,
+    backgroundColor: "#222222",
+    borderRadius: 18,
+    bottom: 40,
+    position: "relative",
+  },
+  label: {
+    fontSize: 14,
+    fontWeight: "bold",
+    color: "#7c7c7c",
+    marginBottom: 6,
+  },
+  inputContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    borderBottomWidth: 2,
+    borderBottomColor: "#acacac",
+    marginBottom: 22,
+  },
+  input: {
+    flex: 1,
+    height: 40,
+    color: "#fff",
+    fontSize: 14,
+    right:3,
+    top:5,
+  },
+  clearText: {
+    fontSize: 20,
+    color: "#bbb",
+    padding: 10,
+  },
+  optionsContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 22,
+  },
+  checkBoxContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  autoLoginText: {
+    marginLeft: 6,
+    fontSize: 14,
+    color: "#fff",
+  },
+  optionText: {
+    fontSize: 14,
+    color: "#7c7c7c",
+  },
+  loginButton: {
+    backgroundColor: "#00C853",
+    paddingVertical: 14,
+    borderRadius: 25,
+    alignItems: "center",
+  },
+  loginButtonText: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "bold",
+  },
 
+  socialContainer: {
+    marginTop: 10,
+    alignItems: "center",
+  },
+  button: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    width: 330,
+    height: 52,
+    borderRadius: 25,
+    marginVertical: 2,
+    bottom: 40,
+  },
+  kakao: {
+    backgroundColor: "#FEE500",
+  },
+  apple: {
+    backgroundColor: "#fff",
+    borderWidth: 1,
+    borderColor: "#000",
+  },
+  naver: {
+    backgroundColor: "#03C75A",
+  },
+  icon: {
+    position: "absolute",
+    left: 22,
+    width: 26,
+    height: 26,
+    resizeMode: "contain",
+  },
+  text: {
+    fontSize: 16,
+  },
+  signupButton: {
+    marginTop: 22,
+    top: 15,
+  },
+  signupText: {
+    fontSize: 15,
+    color: "#03C75A",
+  },
+});
 
 
 export default styles;

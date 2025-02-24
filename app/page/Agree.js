@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { View, Text, ScrollView, TouchableOpacity, StyleSheet, Alert } from "react-native";
+import { View, Text, ScrollView, TouchableOpacity, Alert } from "react-native";
 import Checkbox from "expo-checkbox";
 import { useRouter } from "expo-router";
 import styles from "../style/argreestyles";
+
 
 const TermsPage =()=> {
   const router = useRouter();
@@ -15,6 +16,8 @@ const TermsPage =()=> {
     }
     router.push("/page/LoginPage");
   };
+  
+
 
   return (
     <View style={styles.container}>

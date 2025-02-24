@@ -6,13 +6,14 @@
     },
     "plugins": [
       "expo-router",
-      "expo-camera",      
+      "expo-camera",
       [
         "expo-location",
         {
           "isAndroidBackgroundLocationEnabled": true
         }
-      ]
+      ],
+      "expo-apple-authentication"
     ],
     "name": "notetest-app",
     "slug": "notetest-app",
@@ -22,9 +23,9 @@
         "ACCESS_FINE_LOCATION",
         "ACCESS_COARSE_LOCATION",
         "ACCESS_BACKGROUND_LOCATION",
-        "android.permission.CAMERA",                      
-        "WRITE_EXTERNAL_STORAGE",      
-        "VIBRATE"                      
+        "android.permission.CAMERA",
+        "WRITE_EXTERNAL_STORAGE",
+        "VIBRATE"
       ],
       "config": {
         "googleMaps": {
