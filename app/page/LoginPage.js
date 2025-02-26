@@ -1,6 +1,6 @@
 import { router, useRouter } from "expo-router";
 import React, { useState } from "react";
-import { login } from "../api/AuthApi";
+import { login } from "../api/loginApi";
 import {
     Text,
     TextInput,

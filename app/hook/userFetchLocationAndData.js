@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import * as Location from "expo-location";
 import { Alert } from "react-native";
-import { getNearbyCollectionPoints } from "../api/AuthApi"; // ✅ API 불러오기
+import { getNearbyCollectionPoints } from "../api/aroundboxApi"; // ✅ API 불러오기
 
 const useFetchLocationAndData = () => {
   const [currentLocation, setCurrentLocation] = useState(null);

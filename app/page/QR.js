@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { View, Text, SafeAreaView, StatusBar, Platform, StyleSheet, TouchableOpacity, Switch } from "react-native";
 import { CameraView } from "expo-camera";
 import { useRouter } from "expo-router";
-import { QR } from "../api/AuthApi";
+import { QR } from "../api/cameraApi";
 import { AntDesign } from "@expo/vector-icons";
 import styles from "../style/QRstyles";
 

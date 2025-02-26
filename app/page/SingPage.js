@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, TouchableOpacity, StyleSheet } from "react-native";
-import { singup } from "../api/AuthApi"; // 회원가입 API 호출
+import { View, Text, TextInput, TouchableOpacity } from "react-native";
+import { singup } from "../api/singupApi"; // 회원가입 API 호출
 import styles from "../style/singstyles";
 
 

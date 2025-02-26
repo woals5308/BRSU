@@ -12,6 +12,8 @@ const MainPage = () => {
     <View style={styles.container}>
       <StatusBar backgroundColor="#F4F5F6" barStyle="dark-content" />
 
+      
+
       {/* 상단 헤더 */}
       <View style={styles.header}>
         <Image style={styles.logo} source={require('../assets/image/mainlogo2.png')} />

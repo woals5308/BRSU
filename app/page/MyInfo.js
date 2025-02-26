@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { View, Text } from "react-native";
-import { fetchMyInfo } from "../api/AuthApi";
+import { fetchMyInfo } from "../api/myinfoApi";
 
 const MyPage = () => {
     const [userInfo, setUserInfo] = useState(null); 
