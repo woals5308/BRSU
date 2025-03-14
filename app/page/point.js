@@ -33,7 +33,7 @@ const ShoppingScreen = () => {
 
   // ✅ 장바구니 개수 증가 함수 (최대 3개)
   const increaseCartCount = () => {
-    setCartCount((prevCount) => (prevCount < 3 ? prevCount + 1 : prevCount));
+    setCartCount((prevCount) => (prevCount < 10 ? prevCount + 1 : prevCount));
   };
 
   const selectItem = (item) => {
@@ -53,7 +53,7 @@ const ShoppingScreen = () => {
         <Text style={styles.headerTitle}>쇼핑</Text>
 
         {/* ✅ 장바구니 아이콘 & 배지 */}
-        <TouchableOpacity style={styles.cartButton} onPress={() => router.push("/cart")}>
+        <TouchableOpacity style={styles.cartButton} onPress={() => router.push("/page/Cart")}>
           <Ionicons name="bag-outline" size={30} color="black" />
           {cartCount > 0 && (
             <View style={styles.badge}>

@@ -3,11 +3,8 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 
 // Axios 인스턴스 생성
 const axiosInstance = axios.create({
-    baseURL : "http://localhost:8080/",
+    baseURL : "http://192.168.34.28:8080/",
     timeout : 5000,
-    headers:{
-        "Content-Type" : "multipart/form-data",
-    },
 });
 
 

@@ -55,22 +55,19 @@ const Login = () =>{
 
 
     //일반 로그인 처리 함수
-    const handleLogin = () =>{
-
+    const handleLogin = async () =>{
+        try{
+            const loginSuccess = await login(id,password);
+            if(loginSuccess){
+                router.push("/");
+            }else{
+                alert("fail")
+            }
+        }catch(error){
+            console.error(error);
+            alert("error")
+        }
     }
-    // const handleLogin = async () =>{
-    //     try{
-    //         const loginSuccess = await login(id,password);
-    //         if(loginSuccess){
-    //             router.push("/");
-    //         }else{
-    //             alert("fail")
-    //         }
-    //     }catch(error){
-    //         console.error(error);
-    //         alert("error")
-    //     }
-    // }
     
  return (
     <KeyboardAvoidingView
@@ -146,7 +143,7 @@ const Login = () =>{
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.signupButton}>
-            <Text style={styles.signupText}>지금 바로 회원가입 →</Text>
+            <Text style={styles.signupText} onPress={()=>router.push("/page/SignPage")}>지금 바로 회원가입 →</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>

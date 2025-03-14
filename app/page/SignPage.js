@@ -1,24 +1,23 @@
 import React, { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
-import { singup } from "../api/singupApi"; // 회원가입 API 호출
+import { signup } from "../api/signupApi";
 import styles from "../style/singstyles";
 
 
-const Singup = () => {
+const Signup = () => {
   // 입력값 상태 관리
   const [userId, setUserId] = useState("");
   const [userPw, setUserPw] = useState("");
   const [userName, setUserName] = useState("");
-  const [userAdd, setUserAdd] = useState("");
-  const [userEmail, setUserEmail] = useState("");
+  const [userphoneNunber, setUserphoneNumber] = useState("");
 
   // 회원가입 처리 함수
   const handleSingup = () => {
-    if (!userId || !userPw || !userName || !userAdd || !userEmail) {
+    if (!userId || !userPw || !userName || !userphoneNunber) {
       alert("모든 정보를 입력해주세요!");
       return;
     }
-    singup(userId, userPw, userAdd, userEmail, userName);
+    signup(userId, userPw, userphoneNunber, userName);
   };
 
   return (
@@ -53,23 +52,15 @@ const Singup = () => {
         onChangeText={setUserName}
       />
 
-      {/* 주소 입력 */}
+      {/* 폰 번호*/}
       <TextInput
         style={styles.input}
-        placeholder="주소 :"
+        placeholder="핸드폰 번호 :"
         placeholderTextColor="#bbb"
-        value={userAdd}
-        onChangeText={setUserAdd}
+        value={userphoneNunber}
+        onChangeText={setUserphoneNumber}
       />
 
-      {/* 이메일 입력 */}
-      <TextInput
-        style={styles.input}
-        placeholder="이메일 :"
-        placeholderTextColor="#bbb"
-        value={userEmail}
-        onChangeText={setUserEmail}
-      />
 
       {/* 회원가입 버튼 */}
       <TouchableOpacity style={styles.signupButton} onPress={handleSingup}>
@@ -79,4 +70,4 @@ const Singup = () => {
   );
 };
 
-export default Singup;
+export default Signup;
